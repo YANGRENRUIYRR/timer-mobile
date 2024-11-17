@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An easy-to-use timer with user-friendly UI & rich features made by HTML, JavaScript and CSS.">
+    <meta name="keywords" content="timer, time, count, countdown, html, js, css, user-friendly">
+    <link rel="stylesheet" href="./assets/css/buttons.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>倒计时</title>
+    <script>
+        alert("这是电脑版计时器，请用电脑全屏使用此网站，否则可能会出现格式错乱问题。如页面过小，请自行放大。")
+    </script>
+</head>
+
+<body>
+    <h3 id="title">请全屏使用此网站</h3>
+    <font face="Courier New">
+        <h1 id="timer" style="color: rgb(113, 201, 206);">
+            05:00.000
+        </h1>
+    </font>
+
+    <div id="modifyContainer">
+        <input type="text" id="minuteInput" placeholder="分钟（默认 5）" oninput="validateInput2(event)">
+        <input type="text" id="secondInput" placeholder="秒（默认 0）" oninput="validateInput2(event)">
+        <input type="text" id="millisecondInput" placeholder="毫秒（默认 0）" oninput="validateInput3(event)">
+        <button id="modifyButton" onclick="modifyTimer()" class="button button-glow button-rounded button-primary">保存</button>
+    </div>
+    <h1 id="status" style="color: rgb(113, 201, 206);">未开始计时</h1>
+
+    <button id="renewButton" onclick="init()" class="button button-glow button-rounded button-primary">重置计时器</button>
+    <button id="startButton" onclick="go()" class="button button-glow button-rounded button-primary">开始计时</button>
+    <button id="stopButton" onclick="stop()" class="button button-glow button-rounded button-primary" disabled="">停止计时</button>
+    <h1 id="title">倒计时</h1>
+    <script src="./assets/js/multilingual.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/input_validate.js"></script>
+    
+</body>
+</html>

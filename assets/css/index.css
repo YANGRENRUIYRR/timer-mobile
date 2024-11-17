@@ -1,0 +1,110 @@
+    body
+    {
+        background-color: #e3fdfd;
+        color: #71c9ce;
+        text-align: center;
+    }
+    #timer
+    {
+        font-size: 125px;
+    }
+    input[type="text"]
+    {
+        padding: 8px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    #modifyContainer
+    {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        text-align: right;
+    }
+    #modifyButton
+    {
+        font-family: 'Google Sans';
+        margin-left: 5px;
+    }
+    #startButton
+    {
+        font-family: 'Google Sans';
+    }
+    #stopButton
+    {
+        font-family: 'Google Sans';
+    }
+    #renewButton
+    {
+        font-family: 'Google Sans';
+    }
+    button[disabled]
+    {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+    button[disabled] span
+    {
+        color: #666;
+    }
+    @font-face
+    {
+        font-family: 'Google Sans';
+        font-style: normal;
+        font-weight: 200;
+        src: url('../fonts/GoogleSans-Regular.ttf') format('truetype');
+    }
+    #normal-text
+    {
+        font-family: 'Google Sans', Arial;
+        line-height: 1.0; 
+    }
+    #status
+    {
+        font-family: 'Google Sans', Arial;
+    }
+    input[type="text"]
+    {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Google Sans', Arial;
+        font-size: 15px;
+        width: 160px;
+        height: 25px;
+    }
+    #language-switch {
+      font-family: 'Google Sans', Arial;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      width: 0px;
+    }
+    /* Style for language options */
+    #language-options {
+      font-family: 'Google Sans', Arial;
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 10px;
+      background-color: #71c9ce;
+      border: 1px solid #A2DFD0;
+      border-radius: 5px;
+      padding: 5px;
+      width: 140px;
+    }
+    #language-options a {
+      display: block;
+      padding: 5px;
+      text-decoration: none;
+      color: #333;
+    }
+    #language-options a:hover {
+      background-color: #A2DFD0;
+    }
+    #title
+    {
+      font-family: 'Google Sans', Arial;
+    }
