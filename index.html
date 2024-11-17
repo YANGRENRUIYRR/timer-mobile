@@ -15,21 +15,18 @@
 </head>
 
 <body>
+    <input type="text" id="minuteInput" placeholder="分钟（默认 5）" oninput="validateInput2(event)">
+    <br /><br />
+    <input type="text" id="secondInput" placeholder="秒（默认 0）" oninput="validateInput2(event)">
+    <br /><br />
+    <input type="text" id="millisecondInput" placeholder="毫秒（默认 0）" oninput="validateInput3(event)">
+    <br /><br />
+    <button id="modifyButton" onclick="modifyTimer()" class="button button-glow button-rounded button-primary">保存</button>
     <font face="Courier New">
         <h1 id="timer" style="color: rgb(113, 201, 206);">
             05:00.000
         </h1>
     </font>
-
-    <div id="modifyContainer">
-        <input type="text" id="minuteInput" placeholder="分钟（默认 5）" oninput="validateInput2(event)">
-        <br /><br />
-        <input type="text" id="secondInput" placeholder="秒（默认 0）" oninput="validateInput2(event)">
-        <br /><br />
-        <input type="text" id="millisecondInput" placeholder="毫秒（默认 0）" oninput="validateInput3(event)">
-        <br /><br />
-        <button id="modifyButton" onclick="modifyTimer()" class="button button-glow button-rounded button-primary">保存</button>
-    </div>
     <h1 id="status" style="color: rgb(113, 201, 206);">未开始计时</h1>
 
     <button id="renewButton" onclick="init()" class="button button-glow button-rounded button-primary">重置计时器</button>
