@@ -111,7 +111,6 @@ async function init()
     FirstDisplay();
     document.getElementById('startButton').disabled=false;
     stop();
-    alert("这是手机版计时器，请用手机使用此网站。");
 }
 
 function timeLower(now1,now2,now3,goto1,goto2,goto3)
@@ -242,3 +241,4 @@ function stop()
     document.getElementById('renewButton').disabled=false;
 }
 document.getElementById('stopButton').disabled=true;
+alert("这是手机版计时器，请用手机使用此网站。");
