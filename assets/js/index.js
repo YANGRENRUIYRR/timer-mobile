@@ -208,7 +208,7 @@ const go=()=>
     document.getElementById('minuteInput').disabled=true;
     document.getElementById('secondInput').disabled=true;
     document.getElementById('millisecondInput').disabled=true;
-    if(document.getElementById('timer').style.color=='#e74c3c'){
+    if(document.getElementById('timer').style.color=='#e74c3c'||document.getElementById('timer').style.color=='rgb(231, 76, 60)'){
         document.getElementById('status').innerText='超时';
         document.getElementById('status').style.color=='#e74c3c'
     }
