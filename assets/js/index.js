@@ -111,6 +111,7 @@ async function init()
     FirstDisplay();
     document.getElementById('startButton').disabled=false;
     stop();
+    alert("这是手机版计时器，请用手机使用此网站。");
 }
 
 function timeLower(now1,now2,now3,goto1,goto2,goto3)
@@ -173,7 +174,6 @@ function updateTimerDisplay()
         if(document.getElementById('timer').style.color!=='#e74c3c'&&document.getElementById('timer').style.color!=='rgb(231, 76, 60)')
         {
             console.log(document.getElementById('timer').style.color);
-            alert("超时");
             document.getElementById('timer').style.color='#e74c3c';
             document.getElementById('status').innerText='超时';
             document.getElementById('status').style.color='#e74c3c';
