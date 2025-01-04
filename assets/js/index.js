@@ -173,6 +173,7 @@ function updateTimerDisplay()
         if(document.getElementById('timer').style.color!=='#e74c3c'&&document.getElementById('timer').style.color!=='rgb(231, 76, 60)')
         {
             console.log(document.getElementById('timer').style.color);
+            alert("超时");
             document.getElementById('timer').style.color='#e74c3c';
             document.getElementById('status').innerText='超时';
             document.getElementById('status').style.color='#e74c3c';
@@ -187,7 +188,6 @@ function updateTimerDisplay()
     const remainingMinutes=Math.floor(remainingMilliseconds/(60*1000));
     const remainingSeconds=Math.floor((remainingMilliseconds%(60*1000))/1000);
     const remainingMillisecondsToShow=remainingMilliseconds%1000;
-    console.log(remainingMinutes);
     document.getElementById('timer').innerText=getTwo(remainingMinutes)+':'+getTwo(remainingSeconds)+'.'+remainingMillisecondsToShow.toString().padStart(3,'0');
     return [remainingMinutes,remainingSeconds,remainingMillisecondsToShow];
 }
