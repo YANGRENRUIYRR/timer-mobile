@@ -136,8 +136,11 @@ function modifyTimer()
     nmillisecond=parseInt(nmillisecond);
     if(nsecond<0||nsecond>59)
     {
-        if(nowlang!='en') alert('秒数只能介于 0 和 59 之间！');
-        else alert('Seconds can only be between 0 and 59!');
+        Swal.fire({
+            title: '错误',
+            text: '秒数只能介于 0 和 59 之间！',
+            icon: 'error'
+        });
         return;
     }
     min=nmin;
@@ -244,4 +247,3 @@ function stop()
     document.getElementById('renewButton').disabled=false;
 }
 document.getElementById('stopButton').disabled=true;
-alert("这是手机版计时器，请用手机使用此网站。");
